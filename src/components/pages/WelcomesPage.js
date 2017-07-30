@@ -8,8 +8,8 @@ export default class extends Component {
         cont: false
     }
 
-    componentDidMount() {
-        setTimeout(() => this.setState({ toZero: true }), 500);
+    componentWillMount() {
+        setTimeout(() => this.setState({ toZero: true }), 0);
     }
 
     handleContinue = () => {

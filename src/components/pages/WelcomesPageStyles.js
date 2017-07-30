@@ -43,16 +43,15 @@ export default {
         left: 0
     }),
     rightZero: cxs({
-        right: 0,
-        transition: '0.5s'
+        right: 0
     }),
     leftTop: cxs({
-        top: '-2000%',
-        transition: '3s'
+        top: '-200%',
+        transition: '0.8s'
     }),
     rightBottom: cxs({
-        bottom: '-2000%',
-        transition: '3s'
+        bottom: '-200%',
+        transition: '0.8s'
     }),
     continue: cxs({
         width: '70%',
