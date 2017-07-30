@@ -1,5 +1,4 @@
 import ApiClient from './ApiClient';
-import TracksAPI from './Tracks';
 
 export default function ({ apiPrefix } = {}) {
     if (!apiPrefix) {
@@ -9,7 +8,6 @@ export default function ({ apiPrefix } = {}) {
     const api = new ApiClient({ prefix: apiPrefix });
 
     return {
-        apiClient : api,
-        tracks    : new TracksAPI({ apiClient: api })
+        apiClient : api
     };
 }
