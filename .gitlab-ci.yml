@@ -1,0 +1,7 @@
+image: node:6.9
+
+lint:
+  stage: test
+  script:
+    - npm install
+    - npm run lint

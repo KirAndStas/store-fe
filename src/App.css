@@ -1,0 +1,91 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+@keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.SoundPlayer {
+    display: flex;
+    padding-left: 20px;
+}
+
+.playerButton {
+    height: 20px;
+    width: 50px;
+    padding: 4px;
+    color: rgb(34, 34, 34);
+    border: solid rgb(34, 34, 34) 2px;
+    transition: linear .3s;
+}
+
+.playerButton:hover {
+    color: white;
+    background-color: rgb(34, 34, 34);
+    cursor: pointer;
+}
+
+.playerButton-playing {
+    background-color: #61dafb;
+}
+
+.playingLabel {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.trackList {
+    width: 200px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.trackListTitle {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
+    width: 100%;
+    border-bottom: solid rgb(34, 34, 34) 2px;
+}
+
+.trackListItem {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
+    width: 100%;
+    height: 20px;
+    transition: linear .2s;
+}
+
+.trackListItem:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(34, 34, 34);
+}
+
+.trackListItemSelected {
+    color: rgb(34, 34, 34);
+    background-color: #61dafb;
+}
